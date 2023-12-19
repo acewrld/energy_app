@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="billHistoryPane" prefHeight="481.0" prefWidth="909.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.csym025.vosassignment.controller.BillHistory">
+   <children>
+      <Pane layoutX="44.0" layoutY="45.0" prefHeight="10.0" prefWidth="825.0" style="-fx-background-color: #6699ff;" AnchorPane.leftAnchor="44.0" AnchorPane.rightAnchor="40.0" />
+      <HBox layoutX="43.0" layoutY="10.0" prefHeight="52.0" prefWidth="387.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bill History" wrappingWidth="369.33663177490234">
+               <font>
+                  <Font name="Arial Bold" size="32.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <HBox layoutX="487.0" layoutY="20.0" prefHeight="37.0" prefWidth="422.0">
+         <children>
+            <Text fx:id="supplierName" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome: " wrappingWidth="281.3366928100586">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Text>
+         </children>
+      </HBox>
+      <HBox layoutX="35.0" layoutY="62.0" prefHeight="42.0" prefWidth="834.0">
+         <children>
+            <Text fx:id="customerName" strokeType="OUTSIDE" strokeWidth="0.0" text="Full Name:" wrappingWidth="359.73661041259766">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="customerEmail" strokeType="OUTSIDE" strokeWidth="0.0" text="Email Address:" wrappingWidth="442.1366941332817">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Text>
+         </children>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+      </HBox>
+      <HBox layoutX="33.0" layoutY="146.0" prefHeight="42.0" prefWidth="844.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Period" wrappingWidth="190.93659019470215">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Open Reading" wrappingWidth="135.73663902282715">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Close Reading" wrappingWidth="133.33661460876465">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="RPU" wrappingWidth="70.93659019470215">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kwh" wrappingWidth="93.3365535736084">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Total" wrappingWidth="98.1364803314209">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bill Type" wrappingWidth="134.13666343688965">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Text>
+         </children>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+      </HBox>
+      <HBox layoutX="31.0" layoutY="104.0" prefHeight="42.0" prefWidth="834.0">
+         <children>
+            <Text fx:id="customerMobileNo" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile No:" wrappingWidth="365.3365840911865">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="customerMeterNo" strokeType="OUTSIDE" strokeWidth="0.0" text="Meter No:" wrappingWidth="429.33670634031296">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Text>
+         </children>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+      </HBox>
+      <HBox layoutX="38.0" layoutY="283.0" prefHeight="42.0" prefWidth="851.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Total Bill Paid:" wrappingWidth="145.3365535736084">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="grandTotal" strokeType="OUTSIDE" strokeWidth="0.0" text="£0" wrappingWidth="141.3365650177002">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Text>
+         </children>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+      </HBox>
+      <HBox layoutX="30.0" layoutY="206.0" prefHeight="42.0" prefWidth="844.0">
+         <children>
+            <Text fx:id="period" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="190.93659019470215">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="openRead" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="135.73663902282715">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="closeRead" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="133.33661460876465">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="rpu" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="70.93659019470215">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="kwh" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="102.1366024017334">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="total" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="102.93670463562012">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="billType" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="130.13653373718262">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Text>
+         </children>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>
